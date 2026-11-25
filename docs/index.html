@@ -24,13 +24,14 @@
   // Real WordPress (PHP compiled to WebAssembly) runs in the visitor's browser via WordPress Playground.
   // The theme archive sits next to this page, so the demo works on any address it is published at.
   var here = new URL('.', location.href).href;
-  var landing = new URLSearchParams(location.search).get('page') || '/';
+  var qs = new URLSearchParams(location.search), admin = qs.has('admin');
+  var landing = qs.get('page') || (admin ? '/wp-admin/' : '/');
   if (landing.charAt(0) !== '/') landing = '/';
   var blueprint = {
     landingPage: landing,
     preferredVersions: { php: '8.3', wp: 'latest' },
     features: { networking: true },
-    login: true,
+    login: admin,
     siteOptions: { blogname: 'Hearth & Frost', blogdescription: 'Luxury appliance service', timezone_string: 'America/Los_Angeles' },
     steps: [
       { step: 'installTheme', themeData: { resource: 'url', url: here + 'hearth-frost.zip?v=1' }, options: { activate: true } }
