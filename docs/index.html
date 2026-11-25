@@ -37,6 +37,8 @@
       { step: 'installTheme', themeData: { resource: 'url', url: here + 'hearth-frost.zip?v=1' }, options: { activate: true } }
     ]
   };
+  // Visitors see the clean site: the admin's toolbar is switched off unless the link has ?admin.
+  if (!admin) blueprint.steps.push({ step: 'updateUserMeta', userId: 1, meta: { show_admin_bar_front: 'false' } });
   var f = document.getElementById('wp');
   f.addEventListener('load', function(){ setTimeout(function(){ f.className = 'ready'; document.getElementById('boot').style.display = 'none'; }, 400); });
   f.src = 'https://playground.wordpress.net/?mode=seamless#' + encodeURI(JSON.stringify(blueprint));
