@@ -1,0 +1,5 @@
+.venv/
+.localwp/
+.localwp-dl/
+photos-src/
+.DS_Store
