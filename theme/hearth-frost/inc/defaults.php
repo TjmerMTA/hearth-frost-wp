@@ -53,7 +53,7 @@ function hf_defaults() {
 		'why_title'      => 'A higher standard of *care*',
 		'why_text'       => 'Your kitchen was designed with intention. We treat it that way — from the first phone call to the last wipe of the counter.',
 		'why_points'     => "Factory-trained technicians|Continuous training on current and legacy models.\nGenuine OEM parts|Original components only, stocked on our vans.\nRespect for your home|Shoe covers, protective mats and a clean finish.\nWork that is guaranteed|Every repair is backed by our workmanship warranty.",
-		'why_image'      => 'technician.jpg',
+		'why_image'      => 'why-kitchen.jpg',
 
 		// Process.
 		'process_title'  => 'From request to *resolved*',

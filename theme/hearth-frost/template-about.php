@@ -21,7 +21,7 @@ while ( have_posts() ) :
 				<?php the_content(); ?>
 			</article>
 			<div class="about-media">
-				<img src="<?php echo hf_img( 'why_image' ); // phpcs:ignore ?>" alt="A technician at work" loading="lazy">
+				<img src="<?php echo hf_img( 'why_image' ); // phpcs:ignore ?>" alt="A bright luxury kitchen with a professional range" loading="lazy">
 				<img src="<?php echo hf_img( 'knobs.jpg', true ); ?>" alt="Range control knobs" loading="lazy">
 			</div>
 		</div>

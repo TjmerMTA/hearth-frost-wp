@@ -16,8 +16,8 @@ All photos are from Unsplash (https://unsplash.com), Unsplash License — free f
 | wine-bar.jpg | photo-1704383014623-a6630096ff8c |
 | dishwasher.jpg | photo-1581622558663-b2e33377dfb2 |
 | ovens.jpg | photo-1639405069836-f82aa6dcb900 |
-| outdoor.jpg | photo-1762117360871-f11fbad00ee1 |
-| technician.jpg | photo-1615467517177-3157c0cd7ff5 |
+| outdoor.jpg | photo-1755816764831-2803235f0099 |
+| why-kitchen.jpg | photo-1773579223066-4b54a17ec8cc |
 | white-kitchen.jpg | photo-1683629357963-adf2b1fa9ad9 |
 | open-kitchen.jpg | photo-1790924083649-146d1f683b1a |
 | black-marble.jpg | photo-1695542958346-d51b0c2f1917 |

@@ -124,7 +124,11 @@
 			btn.disabled = true;
 			msg.className = 'form-msg';
 			msg.textContent = 'Sending…';
-			fetch((window.HF && HF.ajax) || '/wp-admin/admin-ajax.php', { method: 'POST', body: data, credentials: 'same-origin' })
+			// HF.demo (set only in the static preview copy, which has no server): answer locally with that message.
+			var send = (window.HF && HF.demo)
+				? new Promise(function (ok) { setTimeout(function () { ok({ json: function () { return Promise.resolve({ success: true, data: { message: HF.demo } }); } }); }, 600); })
+				: fetch((window.HF && HF.ajax) || '/wp-admin/admin-ajax.php', { method: 'POST', body: data, credentials: 'same-origin' });
+			send
 				.then(function (r) { return r.json().catch(function () { return { success: false }; }); })
 				.then(function (res) {
 					btn.disabled = false;

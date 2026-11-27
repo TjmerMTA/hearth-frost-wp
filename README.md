@@ -5,7 +5,7 @@ Demo site for a luxury kitchen-appliance repair company (Sub-Zero / Wolf / Cove 
 
 - `theme/hearth-frost/` — the WordPress theme.
 - `./build.sh` — packs it into `docs/hearth-frost.zip`.
-- `docs/` — demo page (GitHub Pages): real WordPress in the browser via WordPress Playground,
+- `docs/` — demo (GitHub Pages): a fast static copy of the site (`tools/export.py`); `docs/wp/` runs real WordPress in the browser via WordPress Playground,
   installs `hearth-frost.zip` and opens the home page with the admin bar.
 
 ## Move to the client's hosting

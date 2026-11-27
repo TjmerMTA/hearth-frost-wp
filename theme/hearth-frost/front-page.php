@@ -70,7 +70,7 @@ $schedule = hf_schedule_url();
 <section class="section why">
 	<div class="wrap">
 		<div class="why-card">
-			<div class="why-media reveal"><img src="<?php echo hf_img( 'why_image' ); // phpcs:ignore ?>" alt="A technician repairing an appliance component" loading="lazy"></div>
+			<div class="why-media reveal"><img src="<?php echo hf_img( 'why_image' ); // phpcs:ignore ?>" alt="A bright luxury kitchen with a professional range" loading="lazy"></div>
 			<div class="why-body">
 				<p class="eyebrow">Why <?php echo hf_text( 'company' ); // phpcs:ignore ?></p>
 				<h2 class="h-lg reveal"><?php echo hf_heading( 'why_title' ); // phpcs:ignore ?></h2>
